@@ -1,0 +1,349 @@
+.btn-primary {
+  border: 1px solid var(--bs-primary) !important;
+  background: var(--bs-primary) !important;
+  color: var(--bs-white) !important;
+
+  &:hover {
+    background: #409e4df3 !important;
+    border: 1px solid #16895d !important;
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+.btn-navy {
+  border: 1px solid var(--bs-navy) !important;
+  background: var(--bs-navy) !important;
+  color: var(--bs-white) !important;
+
+  &:hover {
+    background: #1a164a !important;
+    border: 1px solid #1a164a !important;
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+.btn-secondary {
+  border: 1px solid var(--bs-secondary) !important;
+  background: var(--bs-secondary) !important;
+
+  &:hover {
+    background: #5c636a !important;
+    border: 1px solid #565e64 !important;
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+.btn-success {
+  border: 1px solid var(--bs-success) !important;
+  background: var(--bs-success) !important;
+
+  &:hover {
+    background: #157347 !important;
+    border: 1px solid var(--bs-green-600) !important;
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+.btn-danger {
+  border: 1px solid var(--bs-red) !important;
+  background: var(--bs-red) !important;
+
+  &:hover {
+    background: var(--bs-red) !important;
+    border: 1px solid var(--bs-red) !important;
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+.btn-warning {
+  border: 1px solid var(--bs-yellow) !important;
+  background: var(--bs-yellow) !important;
+
+  &:hover {
+    background: #ffca2c !important;
+    border: 1px solid #ffc720 !important;
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+.btn-info {
+  border: 1px solid var(--bs-cyan) !important;
+  background: var(--bs-cyan) !important;
+
+  &:hover {
+    background: #31d2f2 !important;
+    border: 1px solid #25cff2 !important;
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+.btn-light {
+  border: 1px solid var(--bs-gray-100) !important;
+  background: var(--bs-gray-100) !important;
+
+  &:hover {
+    background: #f9fafb !important;
+    border: 1px solid #f9fafb !important;
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+.btn-dark {
+  border: 1px solid var(--bs-dark) !important;
+  background: var(--bs-dark) !important;
+
+  &:hover {
+    background: #1c1f23 !important;
+    border: 1px solid #1a1e21 !important;
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+.btn-link {
+  color: var(--bs-primary) !important;
+
+  &:hover {
+    color: var(--bs-primary) !important;
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+//Outline buttons
+
+.btn-outline-success {
+  color: var(--bs-success) !important;
+  border: 1px solid var(--bs-primary) !important;
+
+  &:hover {
+    color: var(--bs-white) !important;
+    background: var(--bs-success) !important;
+    border: 1px solid var(--bs-success) !important;
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+.btn-outline-danger {
+  color: var(--bs-red) !important;
+  border: 1px solid var(--bs-red) !important;
+
+  &:hover {
+    color: var(--bs-white) !important;
+    background: var(--bs-red) !important;
+    border: 1px solid var(--bs-red) !important;
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+.btn-outline-warning {
+  color: var(--bs-yellow) !important;
+  border: 1px solid var(--bs-yellow) !important;
+
+  &:hover {
+    color: var(--bs-black) !important;
+    background: var(--bs-yellow) !important;
+    border: 1px solid var(--bs-yellow) !important;
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+.btn-outline-info {
+  color: var(--bs-cyan) !important;
+  border: 1px solid var(--bs-cyan) !important;
+
+  &:hover {
+    color: var(--bs-white) !important;
+    background: var(--bs-cyan) !important;
+    border: 1px solid var(--bs-cyan) !important;
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+.btn-outline-light {
+  color: var(--bs-gray-100) !important;
+  border: 1px solid var(--bs-gray-100) !important;
+
+  &:hover {
+    color: var(--bs-black) !important;
+    background: var(--bs-gray-100) !important;
+    border: 1px solid var(--bs-gray-100) !important;
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+.btn-outline-dark {
+  color: var(--bs-gray-100) !important;
+  border: 1px solid var(--bs-gray-100) !important;
+
+  &:hover {
+    color: var(--bs-black) !important;
+    background: var(--bs-gray-100) !important;
+    border: 1px solid var(--bs-gray-100) !important;
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+.btn-outline-primary {
+  color: var(--bs-primary) !important;
+  border: 1px solid var(--bs-gray-300) !important;
+
+  &:hover {
+    color: var(--bs-white) !important;
+    background: var(--bs-primary) !important;
+    border: 1px solid var(--bs-primary) !important;
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+.btn-outline-secondary {
+  color: var(--bs-secondary) !important;
+  border: 1px solid var(--bs-gray-300) !important;
+
+  &:hover {
+    color: var(--bs-black) !important;
+    background: var(--bs-gray-300) !important;
+    border: 1px solid var(--bs-gray-300) !important;
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+
+  em {
+    padding-right: 0.5rem;
+  }
+}
+
+// Button Text only
+.btn-text-only {
+  color: var(--bs-secondary) !important;
+  border: none !important;
+  background: none !important;
+
+  &:hover {
+    color: var(--bs-black) !important;
+    background: var(--bs-gray-100) !important;
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+
+  em {
+    padding-left: 0.5rem;
+  }
+
+  .bi-arrow-left-short {
+    font-size: 1.5rem;
+    padding-left: 0;
+    padding-right: 0.5rem;
+    vertical-align: sub;
+  }
+}
+
+// Button Icon Only
+.btn-icon-only {
+  border: none !important;
+  background: none !important;
+  padding: 0 !important;
+
+  &:hover {
+    color: var(--bs-primary) !important;
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+
+  .bi-plus-circle {
+    font-size: 1.5rem;
+  }
+}
+
+//Resume Builder Button
+
+.btn-add-field {
+  color: var(--bs-gray) !important;
+  border: 1px dashed var(--bs-gray-300) !important;
+  border-radius: 4px;
+  padding: 12px !important;
+
+  &:hover {
+    color: var(--bs-white) !important;
+    background: var(--bs-primary) !important;
+    border: 1px solid var(--bs-primary) !important;
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+.btn-white {
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 1px solid var(--bs-white) !important;
+  background: var(--bs-white) !important;
+}
+
+.btn-replay {
+  padding: 0 !important;
+  border-radius: 4px;
+  color: var(--bs-secondary) !important;
+  border: none !important;
+  background: none !important;
+
+  &:hover {
+    color: var(--bs-primary) !important;
+  }
+}
