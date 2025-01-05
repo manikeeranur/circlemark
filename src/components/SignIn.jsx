@@ -3,14 +3,15 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { Link, useNavigate } from "react-router-dom";
-import axios from "axios";
 import companyLogo from "@assets/images/company-logo.jpeg";
 import signIn from "@assets/images/signin.svg";
+import { handleLogin } from "./services/loginservices";
+import { AppContext } from "./Context/AppProvider";
+import { toast } from "react-toastify";
 
 const SignIn = () => {
   const navigate = useNavigate();
 
-  // Redirect if user is already logged in
   useEffect(() => {
     const userId = localStorage.getItem("userId");
     const roleId = localStorage.getItem("roleId");
@@ -42,20 +43,13 @@ const SignIn = () => {
 
   const onSubmit = async (data) => {
     try {
-      const response = await axios.post(
-        "http://circlemark.in/AdminService/api/UserLogin/Vailduser",
-        data,
-        {
-          headers: {
-            "x-api-key": "7413aea-5e6f-4e2f-b198-f6407413fb3b",
-          },
-        }
-      );
+      const response = await handleLogin(data);
 
-      if (response.data.length > 0) {
-        const { UserId, RoleId, UserName } = response.data[0];
+      if (response.length > 0) {
+        const { UserId, RoleId, Name } = response[0];
         localStorage.setItem("userId", UserId);
         localStorage.setItem("roleId", RoleId);
+        localStorage.setItem("name", Name);
 
         if (RoleId === 1) {
           navigate("/admin");
@@ -63,10 +57,10 @@ const SignIn = () => {
           navigate("/dealer");
         }
       } else {
-        alert("Invalid username or password");
+        toast.error("Invalid username or password");
       }
     } catch (error) {
-      alert("An error occurred. Please try again.");
+      toast.error("Please Check Your Internet Connection");
     }
   };
 

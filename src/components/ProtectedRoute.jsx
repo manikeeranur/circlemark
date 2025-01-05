@@ -10,7 +10,6 @@ const ProtectedRoute = ({ children, role }) => {
   }
 
   if (role && parseInt(roleId) !== role) {
-    // User does not have the required role
     return <Navigate to="/" />;
   }
 
